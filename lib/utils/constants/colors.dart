@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MedicaColors {
-  MedicaColors._();
+class ToDoColors {
+  ToDoColors._();
 
   //App Basic Colors
   static const Color primary = Color(0xFF0D9276);
@@ -20,7 +20,7 @@ class MedicaColors {
 
   //Background Container Colors
   static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = MedicaColors.white.withOpacity(0.1);
+  static Color darkContainer = ToDoColors.white.withOpacity(0.1);
 
   //Button Colors
   static const Color buttonPrimary = Color(0xFF4b68ff);

@@ -14,13 +14,13 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(MedicaSizes.defaultSpace),
+      padding: const EdgeInsets.all(ToDoSizes.defaultSpace),
       child: Column(
         children: [
           Image(
             image: AssetImage(image),
-            height: MedicaHelperFunctions.screenHeight() * 0.6,
-            width: MedicaHelperFunctions.screenWidth() * 0.8,
+            height: ToDoHelperFunctions.screenHeight() * 0.6,
+            width: ToDoHelperFunctions.screenWidth() * 0.8,
           ),
           Text(
             title,
@@ -28,7 +28,7 @@ class OnBoardingPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(
-            height: MedicaSizes.spaceBetweenItems,
+            height: ToDoSizes.spaceBetweenItems,
           ),
           Text(
             subtitle,

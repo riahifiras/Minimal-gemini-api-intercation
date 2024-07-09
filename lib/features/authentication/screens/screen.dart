@@ -12,9 +12,6 @@ class _APIContentScreenState extends State<APIContentScreen> {
   TextEditingController _controller = TextEditingController();
 
   Future<void> _fetchContent(String userInput) async {
-    // Replace with your actual API key
-    const String API_KEY = "YOUR_API_KEY";
-
     // URL for generating content
     final url = Uri.parse(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDg_bXLe5x_luT1HRGNOjoy3enaj5WgKlg");
@@ -99,6 +96,7 @@ class _APIContentScreenState extends State<APIContentScreen> {
                 ElevatedButton(
                   onPressed: () {
                     _fetchContent(_controller.text);
+                    _controller.text = "";
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal,

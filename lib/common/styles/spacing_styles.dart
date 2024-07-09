@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import '../../utils/constants/sizes.dart';
 
-class MedicaSpacingStyle{
+class ToDoSpacingStyle {
   static const EdgeInsetsGeometry paddingWithAppBarHeight = EdgeInsets.only(
-    top: MedicaSizes.appBarHeight,
-    bottom: MedicaSizes.defaultSpace ,
-    left: MedicaSizes.defaultSpace,
-    right: MedicaSizes.defaultSpace,
+    top: ToDoSizes.appBarHeight,
+    bottom: ToDoSizes.defaultSpace,
+    left: ToDoSizes.defaultSpace,
+    right: ToDoSizes.defaultSpace,
   );
 }

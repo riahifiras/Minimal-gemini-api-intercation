@@ -16,9 +16,12 @@ class AppLogoAndTitle extends StatelessWidget {
       children: [
         const Image(
           height: 150,
-          image: AssetImage(MedicaImages.appLogo),
+          image: AssetImage(ToDoImages.appLogo),
         ),
-        Text(MedicaTexts.appName, style: Theme.of(context).textTheme.headlineLarge, ),
+        Text(
+          ToDoTexts.appName,
+          style: Theme.of(context).textTheme.headlineLarge,
+        ),
       ],
     );
   }

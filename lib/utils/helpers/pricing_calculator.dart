@@ -1,4 +1,1 @@
-
-class MedicaPricingCalculator{
-
-}
+class ToDoPricingCalculator {}

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medica_consult/features/authentication/screens/screen.dart';
+import 'package:to_do/features/authentication/screens/screen.dart';
 
 void main() {
   runApp(MyApp());

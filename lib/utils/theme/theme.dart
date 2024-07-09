@@ -9,8 +9,8 @@ import 'custom_themes/outlined_button_theme.dart';
 import 'custom_themes/text_field_theme.dart';
 import 'custom_themes/text_theme.dart';
 
-class MedicaAppTheme {
-  MedicaAppTheme._();
+class ToDoAppTheme {
+  ToDoAppTheme._();
 
   ///Light Theme
   static ThemeData lightTheme = ThemeData(
@@ -19,14 +19,14 @@ class MedicaAppTheme {
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
-    textTheme: MedicaTextTheme.lightTextTheme,
-    chipTheme: MedicaChipTheme.lightChipTheme,
-    appBarTheme: MedicaAppBarTheme.lightAppBarTheme,
-    checkboxTheme: MedicaCheckboxTheme.lightCheckBoxTheme,
-    bottomSheetTheme: MedicaBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: MedicaElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: MedicaOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: MedicaTextFieldTheme.lightInputDecorationTheme,
+    textTheme: ToDoTextTheme.lightTextTheme,
+    chipTheme: ToDoChipTheme.lightChipTheme,
+    appBarTheme: ToDoAppBarTheme.lightAppBarTheme,
+    checkboxTheme: ToDoCheckboxTheme.lightCheckBoxTheme,
+    bottomSheetTheme: ToDoBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: ToDoElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: ToDoOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: ToDoTextFieldTheme.lightInputDecorationTheme,
   );
 
   ///Dark Theme
@@ -36,13 +36,13 @@ class MedicaAppTheme {
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
-    textTheme: MedicaTextTheme.darkTextTheme,
-    chipTheme: MedicaChipTheme.darkChipTheme,
-    appBarTheme: MedicaAppBarTheme.darkAppBarTheme,
-    checkboxTheme: MedicaCheckboxTheme.darkCheckBoxTheme,
-    bottomSheetTheme: MedicaBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: MedicaElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: MedicaOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: MedicaTextFieldTheme.darkInputDecorationTheme,
+    textTheme: ToDoTextTheme.darkTextTheme,
+    chipTheme: ToDoChipTheme.darkChipTheme,
+    appBarTheme: ToDoAppBarTheme.darkAppBarTheme,
+    checkboxTheme: ToDoCheckboxTheme.darkCheckBoxTheme,
+    bottomSheetTheme: ToDoBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: ToDoElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: ToDoOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: ToDoTextFieldTheme.darkInputDecorationTheme,
   );
 }

@@ -6,7 +6,6 @@ import '../../../../../utils/device/device_utility.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 import '../../../controllers/onboarding/onboarding_controller.dart';
 
-
 class OnBoardingDotNavigation extends StatelessWidget {
   const OnBoardingDotNavigation({
     super.key,
@@ -14,17 +13,18 @@ class OnBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = MedicaHelperFunctions.isDarkMode(context);
+    final dark = ToDoHelperFunctions.isDarkMode(context);
     final controller = OnBoardingController.instance;
     return Positioned(
-      bottom: MedicaDeviceUtils.getBottomNavigationBarHeight() + 30,
-      left: MedicaSizes.defaultSpace,
+      bottom: ToDoDeviceUtils.getBottomNavigationBarHeight() + 30,
+      left: ToDoSizes.defaultSpace,
       child: SmoothPageIndicator(
         controller: controller.pageController,
         count: 3,
         onDotClicked: controller.dotNavigationClick,
         effect: ExpandingDotsEffect(
-            activeDotColor: dark ? MedicaColors.light : MedicaColors.dark, dotHeight: 6),
+            activeDotColor: dark ? ToDoColors.light : ToDoColors.dark,
+            dotHeight: 6),
       ),
     );
   }

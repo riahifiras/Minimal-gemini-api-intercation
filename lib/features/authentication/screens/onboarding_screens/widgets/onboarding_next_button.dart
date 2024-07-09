@@ -12,14 +12,15 @@ class OnBoardingNextBottom extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    final dark=MedicaHelperFunctions.isDarkMode(context);
+    final dark = ToDoHelperFunctions.isDarkMode(context);
     return Positioned(
-        right: MedicaSizes.defaultSpace,
-        bottom: MedicaDeviceUtils.getBottomNavigationBarHeight(),
+        right: ToDoSizes.defaultSpace,
+        bottom: ToDoDeviceUtils.getBottomNavigationBarHeight(),
         child: ElevatedButton(
           onPressed: () => OnBoardingController.instance.nextPage(),
           style: ElevatedButton.styleFrom(
-              shape:  const CircleBorder(), backgroundColor: dark ? MedicaColors.primary : Colors.black),
+              shape: const CircleBorder(),
+              backgroundColor: dark ? ToDoColors.primary : Colors.black),
           child: const Icon(Iconsax.arrow_right_3),
         ));
   }
